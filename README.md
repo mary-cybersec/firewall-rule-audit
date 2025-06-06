@@ -40,3 +40,79 @@ It analyzes rules based on:
 3. Change directory:
    ```powershell
    cd "$env:USERPROFILE\Documents"
+4. Run the script:
+   ```powershell
+   .\FirewallRuleAudit.ps1
+5. Find the output CSV in your Documents folder
+
+   Tools Used
+
+ PowerShell (Windows built-in)
+ CSV output for easy review
+ Custom risk assessment logic
+
+
+
+
+
+
+
+
+
+
+Why This Project Matters
+
+
+
+
+
+Understanding and auditing firewall rules is a core blue team skill. This project demonstrates:
+
+
+
+Scripting ability in PowerShell
+Security-focused thinking
+Hands-on analysis of real system configurations
+
+
+
+
+
+
+
+
+
+
+Sample Output
+
+
+
+
+
+Output file: FirewallAudit-YYYYMMDD-HHmm.csv
+
+Sample fields:
+
+
+
+RuleName: File and Printer Sharing (SMB-In)
+LocalPort: 445
+RemoteAddr: Any
+RiskLevel: Open to all; Uses risky port 445
+
+
+
+
+
+
+
+
+
+
+Security Note
+
+
+
+
+
+The script is read-only and makes no changes to your system. It is intended for security auditing and educational purposes.
